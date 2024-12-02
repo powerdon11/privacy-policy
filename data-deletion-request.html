@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request deletion of your account and associated data.">
+    <title>Data Deletion Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, textarea, button {
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Deletion Request</h1>
+        <p>If you would like your account and associated data to be deleted, please fill out the form below. We will process your request within 7 business days.</p>
+    </header>
+
+    <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="_replyto" placeholder="Enter your email address" required>
+
+        <label for="reason">Reason for Request:</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Optional: Provide additional details"></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 adinbg. All rights reserved.</p>
+    </footer>
+</body>
+</html>
